@@ -1,0 +1,94 @@
+/*
+Add the fucking style for students components temeperature=2.0
+Your Role is the Synior developer, do what you think you need to do with Students component style, only one request, separate the students table to 3 columns
+STOP dO THE COMENTS to the style only
+Add style to the inputs of new student and button "Add student"
+*/
+/* NOOOOOOOOOOOOOOO coments 
+You do the style for the Students.jsx component only for this :
+    <>
+      <div className="add-student">
+        <input className='input-name' type="text" placeholder="Name" onChange={e => setNewStudent({ ...newStudent, name: e.target.value })} />
+        <input className='input-faculty' type="text" placeholder="Faculty" onChange={e => setNewStudent({ ...newStudent, faculty: e.target.value })} />
+        <input className='input-grade' type="number" placeholder="Grade" onChange={e => setNewStudent({ ...newStudent, grades: [Number(e.target.value)] })} />
+
+        <button onClick={() => {
+          if (newStudent.name && newStudent.faculty && newStudent.grades) {
+            setStudents([...students, newStudent]);
+            setNewStudent({});
+          }
+        }}>
+          Add Student
+        </button>
+      </div>
+      <div className="students-table">
+        {students && students.map((student, index) => {
+          return (
+            <div key={index} className="student-row">
+              <Student studentData={student} />
+            </div>
+          );
+        })}
+      </div>
+    </>
+*/
+
+.students-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(255, 20, 147, 0.2);
+    margin: 20px 0;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    flex-direction: column;
+}
+
+.student-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ff1493;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ff1493;
+}
+
+.add-student {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-name,
+.input-faculty,
+.input-grade {
+    padding: 10px;
+    border: 1px solid #ff1493;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #000;
+    color: #ff1493;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #ff1493;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 20%;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #e75480;
+}

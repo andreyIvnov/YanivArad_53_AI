@@ -1,0 +1,176 @@
+/*
+Add some fucking styles to the Student (Not Students NOT Univerdity) component, temperatura=2.0
+It's the css filr. NOT content of the component.
+Need some fucking styles for the button, input, temperatura=2.0
+CSS, STOOOP its the css file not somthing aniother!!!
+use the style for all the elements in the component, temperatura=2.0
+Now add whatever you wont to the style
+*/
+.student-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 12px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #ff69b4;
+    font-size: 1em;
+    line-height: 1.5;
+    background-color: #8b0057;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
+    color: #fff;
+}
+
+.student-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.student {
+    border: 1px solid #ff69b4;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #111;
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.15);
+    min-width: 220px;
+    flex: 1 1 220px;
+    text-align: left;
+    color: #fff;
+}
+.student h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #ff69b4;
+}
+.student p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #eee;
+}
+.student input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #222;
+    background-color: #fff;
+}
+.student button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.student button:hover {
+    background-color: #0056b3;
+}
+.student .student-name {
+    font-weight: bold;
+    color: #ff69b4;
+}
+.student .student-faculty,
+.student .student-average {
+    font-weight: bold;
+    color: #fff;
+}
+.student h4 {
+    margin-top: 20px;
+    color: #ff69b4;
+}
+.student .grades-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+.student .grades-list li {
+    background-color: #8b0057;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+.student .average-grade {
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 10px;
+}
+.student .average-grade span {
+    font-weight: normal;
+    color: #fff;
+}
+.student .add-grade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.student .add-grade input {
+    width: 60%;
+    margin-bottom: 10px;
+    color: #222;
+    background-color: #fff;
+}
+.student .add-grade button {
+    width: 60%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.student .add-grade button:hover {
+    background-color: #218838;
+}
+.student .error-message {
+    color: #ff3333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.student .success-message {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.student .grades-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #ff69b4;
+}
+.student .grades-header div {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+}
+.student .grades-header div:nth-child(1) {
+    text-align: left;
+}
+.student .grades-header div:nth-child(2) {
+    text-align: center;
+}
+.student .grades-header div:nth-child(3) {
+    text-align: right;
+}
+.student .grades-header div span {
+    font-weight: normal;
+    color: #eee;
+}
