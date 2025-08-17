@@ -1,0 +1,16 @@
+{
+  "servers": {
+    "WeatherService": {
+      "command": "node",
+      "args": ["C:/Users/miche/Desktop/AI 3/Lesson5/MCP Servers/Demo1_WeatherService/server.js"]
+    },
+    "name-origin": {
+      "command": "python",
+      "args": ["C:/Users/miche/Desktop/AI 3/Lesson5/MCP Servers/Demo2_Name_Origin/main.py"]
+    },
+    "users-service": {
+      "command": "python",
+      "args": ["C:/Users/miche/Desktop/AI 3/Lesson5/Ex1_McpServer/main.py"]
+    }
+  }
+}
