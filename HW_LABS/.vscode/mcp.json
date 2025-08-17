@@ -1,0 +1,10 @@
+{
+    "servers": {
+        "WeatherService": {
+            "type":"stdio",
+            "command": "node",
+            "cwd": "${workspaceFolder}",
+            "args": ["./WeatherService/server.js"]
+        }
+    }
+}
